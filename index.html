@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Profesional</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        /* Logo */
+        header .logo {
+            height: 50px;
+        }
+
+        /* Barra de navegación */
+        header nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        header nav a:hover {
+            background-color: #555;
+        }
+
+        /* Portada */
+        .portada {
+            position: relative;
+            background-image: url('foto.png');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            text-align: center;
+            color: white;
+        }
+
+        .portada .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .portada .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .portada .content h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .portada .content .role {
+            font-size: 1.5rem;
+        }
+
+        /* Estilo para Designer y Coder en los extremos */
+        .extremos {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            padding: 0 20px;
+            color: black;
+        }
+
+        .extremos .role {
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 1.5rem;
+        }
+
+        /* Sección de contenido */
+        .container-section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1200px;
+        }
+
+        /* Estilos de los proyectos */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .project {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .project h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #000;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .project a:hover {
+            background-color: #555;
+        }
+
+        /* Estilos de contacto y redes */
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .footer-icons a {
+            margin: 0 10px;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        iframe {
+            border: 0;
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contactos">Contactos</a>
+        </nav>
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </header>
+
+    <!-- Portada -->
+    <div class="portada">
+        <div class="overlay"></div>
+        <div class="content">
+            <h2>Bienvenido a mi portafolio</h2>
+        </div>
+        <div class="extremos">
+            <div class="role">Designer</div>
+            <div class="role">&lt;Coder&gt;</div>
+        </div>
+    </div>
+
+    <div class="container-section">
+        <!-- Sección de los 8 proyectos -->
+        <section id="proyectos">
+            <h2>Mis Proyectos</h2>
+            <div class="projects">
+                <!-- Proyecto 1 -->
+                <div class="project">
+                    <h3>Proyecto 1</h3>
+                    <p>Semana 1</p>
+                    <a href="https://github.com/EDWRAM/BASE_DATOS_II/blob/main/SEMANA_1_EDWIN%20RAMIREZ%20YARASCA.pdf">Ver Proyecto</a>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="project">
+                    <h3>Proyecto 2</h3>
+                    <p>Semana 2</p>
+                    <a href="https://github.com/EDWRAM/BASE_DATOS_II/blob/main/SEMANA_2_EDWIN%20RAMIREZ%20YARASCA.pdf">Ver Proyecto</a>
+                </div>
+                <!-- Proyecto 3 -->
+                <div class="project">
+                    <h3>Proyecto 3</h3>
+                    <p>Semana 3</p>
+                    <a href="https://github.com/EDWRAM/BASE_DATOS_II/blob/main/SEMANA%203_EDWIN%20RAMIREZ%20YARASCA.pdf">Ver Proyecto</a>
+                </div>
+                <!-- Proyecto 4 -->
+                <div class="project">
+                    <h3>Proyecto 4</h3>
+                    <p>Semana 4</p>
+                    <a href="https://github.com/EDWRAM/BASE_DATOS_II/blob/main/Enunciado%2001_EDWIN_RAMIREZ.pdf">Ver Proyecto</a>
+                </div>
+                <!-- Proyecto 5 -->
+                <div class="project">
+                    <h3>Proyecto 5</h3>
+                    <p>Semana 5</p>
+                    <a href="https://github.com/EDWRAM/BASE_DATOS_II/blob/main/Enunciado%2002.pdf">Ver Proyecto</a>
+                </div>
+                <!-- Proyecto 6 -->
+                <div class="project">
+                    <h3>Proyecto 6</h3>
+                    <p>Semana 6</p>
+                    <a href="https://github.com/EDWRAM/BASE_DATOS_II/blob/main/MANUAL_AZURE_SQL%20SERVER.pdf">Ver Proyecto</a>
+                </div>
+                <!-- Proyecto 7 -->
+                <div class="project">
+                    <h3>Proyecto 7</h3>
+                    <p>Semana 7</p>
+                    <a href="https://github.com/EDWRAM/BASE_DATOS_II/blob/main/MANUAL_Firebase%20Firestore.pdf">Ver Proyecto</a>
+                </div>
+                <!-- Proyecto 8 -->
+                <div class="project">
+                    <h3>Proyecto 8</h3>
+                    <p>Semana 8</p>
+                    <a href="https://github.com/EDWRAM/BASE_DATOS_II.github.io/blob/main/SEGURIDAD_DATOS_SQL.pdf">Ver Proyecto</a>
+                </div>
+                </div>
+                <!-- Proyecto 9 -->
+                <div class="project">
+                    <h3>Proyecto 9</h3>
+                    <p>Semana 9</p>
+                    <a href="https://github.com/EDWRAM/BASE_DATOS_II.github.io/blob/main/PROTECCION%20DE%20DATOS%20EN%20EL%20PERU.pdf">Ver Proyecto</a>
+                </div>
+                  <!-- Proyecto 10 -->
+                <div class="project">
+                    <h3>Proyecto 10</h3>
+                    <p>Semana 10</p>
+                    <a href="https://github.com/EDWRAM/BASE_DATOS_II.github.io/blob/main/Administraci%C3%B3n%20de%20Base%20de%20Datos_EDWIN_RAMIREZ.pdf">Ver Proyecto</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contactos -->
+        <section id="contactos">
+            <h2>Contactos</h2>
+            <p>Si deseas contactarme, no dudes en hacerlo a través de los siguientes canales:</p>
+            <div class="footer-icons">
+                <a href="https:/www.linkedin.com/in/edwin-ram-b756a1339" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/edwyarasca/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.facebook.com/edwin.ramyar"><i class="fab fa-facebook-f"></i></a>
+                 <a href="https://www.tiktok.com/@edwyarasca" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+
+            <!-- Mapa de Google -->
+            <h3>Ubicación</h3>
+            <iframe src="https://www.google.com/maps/place/Huancayo,+Perú/" allowfullscreen=""></iframe>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Mi Portafolio. Todos los derechos reservados.</p>
+    </div>
+</body>
+
+</html>
+
+
